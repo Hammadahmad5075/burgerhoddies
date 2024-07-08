@@ -5,102 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/1f4b816a3f.js" crossorigin="anonymous"></script>
   <title>burger and huddies</title>
 </head>
 <body>
-
-<!-- ===============================NAVBAR START HERE======================= -->
-<nav class="flex justify-between lg:px-[5%] md:px-[3%] items-center pt-[30px] lg:flex hidden">
-  <div class="flex items-center gap-8">
-    <a href="./index.html" class="flex justify-center">
-      <img src="./asstes/imgs/nav_logo.png" alt="" class="lg:w-full md:w-[69%]">
+<div class="h-screen">
+  <nav class="flex justify-between lg:px-[5%] md:px-[3%] items-center pt-[30px] lg:flex hidden">
+    <div class="flex items-center gap-8">
+      <a href="./index.html" class="flex justify-center">
+        <img src="./asstes/imgs/nav_logo.png" alt="" class="lg:w-full md:w-[69%]">
+      </a>
+      <a href=""><i class="fa-brands fa-tiktok text-4xl text-[#3F3F3F] hover:text-[#FB5606]"></i></a>
+          <a href=""><i class="fa-brands fa-instagram text-4xl text-[#3F3F3F] hover:text-[#FB5606]"></i></a>
+    </div>
+    <div>
+      <ul class="flex justify-center gap-8 Avenir font-normal text-lg text-[#3F3F3F] uppercase">
+        <li><a href="./our_story.html" class="hover:text-[#FB5606]">Story</a></li>
+        <li><a href="./work.html" class="hover:text-[#FB5606]">work</a></li>
+        <li><a href="./services.html" class="font-semibold hover:text-[#FB5606]">Services</a></li>
+        <li><a href="./contact_us.html" class="hover:text-[#FB5606]">Connect</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="justify-between px-[5%] items-center pt-[20px] lg:hidden flex">
+    <a href="#">
+      <img src="./asstes/imgs/nav_logo.png" alt="Logo" class="w-[50%]" />
     </a>
-    <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
-    <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
-  </div>
-  <div>
-    <ul class="flex justify-center gap-8 Avenir font-normal text-lg text-[#3F3F3F] uppercase">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </div>
+  </nav>
+  <div id="menu" class="hidden flex-col items-center text-center w-full p-5">
+    <ul class="flex flex-col gap-5 Avenir font-normal text-lg text-[#3F3F3F] uppercase">
       <li><a href="./our_story.html">Story</a></li>
       <li><a href="./work.html">work</a></li>
       <li><a href="./services.html" class="font-semibold">Services</a></li>
       <li><a href="./contact_us.html">Connect</a></li>
     </ul>
+    <div class="flex justify-center gap-5 pt-5">
+      <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
+      <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
+    </div>
   </div>
-</nav>
-<nav class="justify-between px-[5%] items-center pt-[20px] lg:hidden flex">
-  <a href="#">
-    <img src="./asstes/imgs/nav_logo.png" alt="Logo" class="w-[50%]" />
-  </a>
-  <div>
-    <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </div>
-</nav>
-<div id="menu" class="hidden flex-col items-center text-center w-full p-5">
-  <ul class="flex flex-col gap-5 Avenir font-normal text-lg text-[#3F3F3F] uppercase">
-    <li><a href="./our_story.html">Story</a></li>
-    <li><a href="./work.html">work</a></li>
-    <li><a href="./services.html" class="font-semibold">Services</a></li>
-    <li><a href="./contact_us.html">Connect</a></li>
-  </ul>
-  <div class="flex justify-center gap-5 pt-5">
-    <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
-    <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
-  </div>
+  <!-- ===============================NAVBAR END HERE======================= -->
+  
+  <!-- ====================HEADER SECTION START HERE============= -->
+  <section class="px-[10%] flex lg:gap-[150px] md:gap-[100px] md:flex-row flex-col justify-center items-center h-[75%]">
+   
+      <div class="basis-1/2">
+        <div class="mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">01/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl lg:leading-10 md:leading-8 leading-8 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >MARKETING & DIGITAL <br class="lg:block hidden"> STRATEGY</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Building a solid base and paving the way for growth. <br class="xl:block hidden"> We create strategies to establish a strong foundation and drive <br class="xl:block hidden"> your brand's growth</p>
+        </div>
+        <div class="mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">02/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-8 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >SOCIAL MEDIA HANDLING</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Communicating brand identity to a mass. We manage your social <br class="xl:block hidden"> media to engage and grow your audience effectively.</p>
+        </div>
+        <div class="mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">03/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-8 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >BRAND CONSULTATION</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Adding purpose, structure and value. We refine your brand’s <br class="xl:block hidden"> purpose and structure, enhancing its overall value.</p>
+        </div>
+        <div class="mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">04/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-7 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >CREATIVE & ART DIRECTION</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Translating concept to visuals and space. We transform ideas into <br class="xl:block hidden"> stunning visuals and environments that communicate your <br class="xl:block hidden"> message.</p>
+        </div>
+      </div>
+      <div class="basis-1/2">
+        <div class="xl:mb-[71px] lg:mb-[69px] md:mb-14 mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">05/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-10 leading-8 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >PRODUCTION</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Where creativity & execution meet. We bring creative concepts to <br class="xl:block hidden"> life with seamless execution and high-quality results.</p>
+        </div>
+        <div class="lg:mb-9 md:mb-16 mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">06/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-5 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >Filmaking</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Combining cinematic aesthetics and storytelling through the <br class="xl:block hidden"> means of moving image. We craft compelling narratives that bring </p>
+        </div>
+        <div class="lg:mb-9 md:mb-8 mb-8 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">07/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-5 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase ">PHOTOGRAPHY</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Capturing purpose and motion in a static frame. We capture the <br class="xl:block hidden"> essence and energy of each moment with powerful images.</p>
+        </div>
+        <div class="mb-12 group">
+          <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">08/</p>
+          <h1 class="Krungthep font-normal 2xl:text-[35px] xl:text-[31px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-7 text-[#3F3F3F] heading hover:text-[#FB5606] uppercase" >Brand & visual DIRECTION</h1>
+          <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden group-hover:block" >Translating concept to visuals and space. We transform ideas into  <br class="xl:block hidden"> stunning visuals and environments that communicate your  <br class="xl:block hidden"> message.</p>
+        </div>
+      </div>
+ 
+  </section>
+  <!-- ====================HEADER SECTION END HERE============= -->
 </div>
-<!-- ===============================NAVBAR END HERE======================= -->
+<!-- ===============================NAVBAR START HERE======================= -->
 
-<!-- ====================HEADER SECTION START HERE============= -->
-<section class="px-[10%]">
-  <div class="flex lg:gap-[150px] md:gap-[100px] md:flex-row flex-col">
-    <div class="basis-1/2">
-      <div class="mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">01/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl lg:leading-10 md:leading-8 leading-8 text-[#3F3F3F] heading" data-id="1">MARKETING & DIGITAL <br class="lg:block hidden"> STRATEGY</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="1">Building a solid base and paving the way for growth. <br class="xl:block hidden"> We create strategies to establish a strong foundation and drive <br class="xl:block hidden"> your brand's growth</p>
-      </div>
-      <div class="mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">02/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-8 text-[#3F3F3F] heading" data-id="2">SOCIAL MEDIA HANDLING</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="2">Communicating brand identity to a mass. We manage your social <br class="xl:block hidden"> media to engage and grow your audience effectively.</p>
-      </div>
-      <div class="mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">03/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-8 text-[#3F3F3F] heading" data-id="3">BRAND CONSULTATION</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="3">Adding purpose, structure and value. We refine your brand’s <br class="xl:block hidden"> purpose and structure, enhancing its overall value.</p>
-      </div>
-      <div class="mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">04/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-7 text-[#3F3F3F] heading" data-id="4">CREATIVE & ART DIRECTION</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="4">Translating concept to visuals and space. We transform ideas into <br class="xl:block hidden"> stunning visuals and environments that communicate your <br class="xl:block hidden"> message.</p>
-      </div>
-    </div>
-    <div class="basis-1/2">
-      <div class="xl:mb-[71px] lg:mb-[69px] md:mb-14 mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">05/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-10 leading-8 text-[#3F3F3F] heading" data-id="5">PRODUCTION</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="5">Where creativity & execution meet. We bring creative concepts to <br class="xl:block hidden"> life with seamless execution and high-quality results.</p>
-      </div>
-      <div class="lg:mb-9 md:mb-16 mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">06/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-5 text-[#3F3F3F] heading" data-id="6">Filmaking</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="6">Combining cinematic aesthetics and storytelling through the <br class="xl:block hidden"> means of moving image. We craft compelling narratives that bring </p>
-      </div>
-      <div class="lg:mb-9 md:mb-8 mb-8">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">07/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-5 text-[#3F3F3F] heading" data-id="7">PHOTOGRAPHY</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="7">Capturing purpose and motion in a static frame. We capture the <br class="xl:block hidden"> essence and energy of each moment with powerful images.</p>
-      </div>
-      <div class="mb-12">
-        <p class="Avenir font-bold text-[24px] text-[#666666] mb-1">08/</p>
-        <h1 class="Krungthep font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl md:leading-8  leading-7 text-[#3F3F3F] heading" data-id="8">Brand & visual DIRECTION</h1>
-        <p class="Avenir font-normal text-base text-[#666666] mt-2 leading-5 uppercase paragraph hidden" data-id="8">Translating concept to visuals and space. We transform ideas into  <br class="xl:block hidden"> stunning visuals and environments that communicate your  <br class="xl:block hidden"> message.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ====================HEADER SECTION END HERE============= -->
 
 <script>
   const headings = document.querySelectorAll('.heading');
