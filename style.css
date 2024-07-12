@@ -86,33 +86,94 @@ body{
   left: 0;
 }
 
-.w-full {
-  width: 100%;
+
+.group{
+  transition: height 0.3s ease;
 }
 
-.h-full {
-  height: 100%;
+
+
+
+
+
+
+/* The Magic */
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 6em;
 }
 
-.object-cover {
-  object-fit: cover;
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
 }
 
-.opacity-0 {
-  opacity: 0;
+/* 
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 20%;
+    font-family: "PT Sans" sans-serif
+} */
+
+.accordion .accordion-item {
+  /* background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee); */
+  /* border-bottom: 1px solid #666; */
+  padding: 1em;
+  color: red;
 }
 
-.transition-opacity {
-  transition: opacity 0.3s ease-in-out;
+
+
+
+/* .group {
+  padding-bottom: 20px;
+  transition: padding-bottom 0.3s ease; 
 }
 
-.hover\:opacity-100:hover {
-  opacity: 0.3;
+.heading {
+  transition: color 0.3s ease;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.paragraph {
+  position: absolute;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.group:hover {
+  padding-bottom: 60px; 
+}
+
+.group:hover .paragraph {
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+/* @media only screen and (max-width: 1920px) and (min-width: 768px)  {
+  .group:hover {
+    padding-bottom: 60px; 
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =========================STYLING FOR OUR STORY SECTON END HERE================ */
 
